@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Básico y Metadatos Profesionales -->
+    <title>María Pablos | Docente de Formación Profesional, Administración y Gestión e IA Educativa</title>
+    <meta name="description" content="Portfolio profesional de María Pablos. Docente de Formación Profesional para el Empleo (SEPE / ECYL), especialista en Administración y Gestión, Competencias Digitales, Diseño Instruccional e IA aplicada a la educación en Valladolid y Castilla y León.">
+    <meta name="keywords" content="María Pablos, Docente FPE, Formación Profesional para el Empleo, Administración y Gestión, Diseño Instruccional, IA Educativa, Moodle, SEPE, ECYL, Valladolid, Castilla y León, Competencias Digitales, Atención al Cliente">
+    <meta name="author" content="María Pablos">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph para LinkedIn y redes profesionales -->
+    <meta property="og:title" content="María Pablos | Docente FPE, Administración y Gestión e IA Educativa">
+    <meta property="og:description" content="Experiencia, organización e innovación educativa aplicada a la Formación Profesional para el Empleo y entornos empresariales.">
+    <meta property="og:type" content="profile">
+
+    <!-- Tipografía moderna y editorial (Plus Jakarta Sans & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons para iconografía limpia y profesional -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#24496D',      // Azul profesional principal
+                            navyDark: '#1A3652',  // Hover / acento oscuro
+                            pastel: '#8FB4D4',    // Azul pastel
+                            light: '#EAF2FA',     // Azul claro
+                            beige: '#F4F0E9',     // Beige suave editorial
+                            text: '#1F2937',      // Gris oscuro legible
+                            muted: '#4B5563'      // Gris medio para textos secundarios
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            color: #1F2937;
+            background-color: #FFFFFF;
+            font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+        }
+        .editorial-shadow {
+            box-shadow: 0 4px 20px -2px rgba(36, 73, 109, 0.06);
+        }
+        .editorial-card-hover {
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+        .editorial-card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(36, 73, 109, 0.1);
+            border-color: #8FB4D4;
+        }
+        /* Estilo sutil para áreas editables de proyectos reales */
+        .editable-slot {
+            background-image: repeating-linear-gradient(
+                -45deg,
+                rgba(234, 242, 250, 0.4),
+                rgba(234, 242, 250, 0.4) 10px,
+                rgba(255, 255, 255, 0.8) 10px,
+                rgba(255, 255, 255, 0.8) 20px
+            );
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-light selection:text-brand-navy">
+
+    <!-- ==================== NAVEGACIÓN PRINCIPAL ==================== -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Identidad / Marca Personal -->
+                <a href="#inicio" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-brand-navy text-white flex items-center justify-center font-display font-bold text-lg tracking-tight group-hover:bg-brand-navyDark transition-colors">
+                        MP
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-brand-navy text-base sm:text-lg leading-tight">María Pablos</span>
+                        <span class="text-xs text-brand-muted hidden sm:inline">Docencia FPE · Administración · IA Educativa</span>
+                    </div>
+                </a>
+
+                <!-- Menú Desktop -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-brand-muted">
+                    <a href="#sobre-mi" class="hover:text-brand-navy transition-colors py-2">Sobre mí</a>
+                    <a href="#experiencia" class="hover:text-brand-navy transition-colors py-2">Experiencia</a>
+                    <a href="#especialidades" class="hover:text-brand-navy transition-colors py-2">Especialidades</a>
+                    <a href="#portfolio" class="hover:text-brand-navy transition-colors py-2">Portfolio</a>
+                    <a href="#competencias" class="hover:text-brand-navy transition-colors py-2">Competencias</a>
+                    <a href="#formacion" class="hover:text-brand-navy transition-colors py-2">Formación</a>
+                    <a href="#contacto" class="ml-2 px-4 py-2 rounded-lg bg-brand-navy text-white hover:bg-brand-navyDark transition-colors font-medium">
+                        Contactar
+                    </a>
+                </nav>
+
+                <!-- Botón Menú Móvil -->
+                <button id="mobile-menu-btn" type="button" aria-label="Abrir menú de navegación" class="lg:hidden p-2.5 rounded-lg text-brand-navy hover:bg-brand-light focus:outline-none">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-1">
+            <a href="#inicio" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-brand-text hover:bg-brand-light hover:text-brand-navy">Inicio</a>
+            <a href="#sobre-mi" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-brand-text hover:bg-brand-light hover:text-brand-navy">Sobre mí</a>
+            <a href="#experiencia" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-brand-text hover:bg-brand-light hover:text-brand-navy">Experiencia</a>
+            <a href="#especialidades" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-brand-text hover:bg-brand-light hover:text-brand-navy">Especialidades</a>
+            <a href="#portfolio" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-brand-text hover:bg-brand-light hover:text-brand-navy">Proyectos y recursos</a>
+            <a href="#competencias" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-brand-text hover:bg-brand-light hover:text-brand-navy">Competencias digitales</a>
+            <a href="#formacion" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-brand-text hover:bg-brand-light hover:text-brand-navy">Formación</a>
+            <div class="pt-3">
+                <a href="#contacto" class="mobile-link block w-full text-center px-4 py-3 rounded-lg bg-brand-navy text-white font-medium">
+                    Contactar conmigo
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==================== 1. INICIO (HERO EDITORIAL) ==================== -->
+        <section id="inicio" class="relative bg-gradient-to-b from-brand-light/70 via-white to-white pt-12 pb-16 md:pt-20 md:pb-24 border-b border-slate-100">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+                    
+                    <!-- Columna de Texto e Identidad -->
+                    <div class="lg:col-span-7 space-y-6 text-left">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-beige border border-brand-pastel/40 text-brand-navy text-xs sm:text-sm font-medium">
+                            <span class="w-2 h-2 rounded-full bg-brand-navy"></span>
+                            Experiencia · Organización · Innovación Educativa
+                        </div>
+
+                        <div class="space-y-3">
+                            <h1 class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-navy tracking-tight leading-tight">
+                                María Pablos
+                            </h1>
+                            <p class="font-display text-lg sm:text-xl lg:text-2xl font-semibold text-brand-text leading-snug">
+                                Docente de Formación Profesional <span class="text-brand-pastel font-normal">|</span> Administración y Gestión <span class="text-brand-pastel font-normal">|</span> Diseño Instruccional e IA Educativa
+                            </p>
+                        </div>
+
+                        <p class="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl">
+                            Más de seis años de docencia en Formación Profesional para el Empleo (SEPE y ECYL) integrados con más de 17 años de trayectoria en gestión administrativa, coordinación operativa y atención al cliente.
+                        </p>
+
+                        <!-- Botones de Acción Principales -->
+                        <div class="pt-2 flex flex-wrap items-center gap-3 sm:gap-4">
+                            <a href="#contacto" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-brand-navy text-white font-medium text-sm sm:text-base hover:bg-brand-navyDark transition-colors shadow-sm">
+                                <i data-lucide="mail" class="w-4 h-4"></i>
+                                Contactar conmigo
+                            </a>
+                            <a href="#portfolio" class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-white text-brand-navy border border-brand-navy/30 font-medium text-sm sm:text-base hover:bg-brand-light transition-colors">
+                                <i data-lucide="folder-open" class="w-4 h-4"></i>
+                                Ver mi portfolio
+                            </a>
+                            <!-- Botón editable para enlace real de LinkedIn -->
+                            <a href="#contacto" data-action="linkedin-placeholder" onclick="handlePendingLink(event, 'LinkedIn')" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-brand-beige text-brand-navy font-medium text-sm sm:text-base hover:bg-brand-light transition-colors" title="Incorporar enlace de LinkedIn">
+                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                                Visitar mi LinkedIn
+                            </a>
+                            <!-- Botón editable para archivo real de CV -->
+                            <a href="#contacto" data-action="cv-placeholder" onclick="handlePendingLink(event, 'Currículum Vitae (PDF)')" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-white text-brand-muted border border-slate-200 font-medium text-sm sm:text-base hover:text-brand-navy hover:border-brand-pastel transition-colors" title="Incorporar archivo PDF de CV">
+                                <i data-lucide="file-down" class="w-4 h-4"></i>
+                                Descargar mi CV
+                            </a>
+                        </div>
+
+                        <!-- Indicadores clave reales (sin exagerar ni inventar métricas) -->
+                        <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200/80 max-w-xl">
+                            <div>
+                                <p class="font-display font-bold text-xl sm:text-2xl text-brand-navy">+6 años</p>
+                                <p class="text-xs sm:text-sm text-brand-muted">Docencia FPE (SEPE / ECYL)</p>
+                            </div>
+                            <div>
+                                <p class="font-display font-bold text-xl sm:text-2xl text-brand-navy">+17 años</p>
+                                <p class="text-xs sm:text-sm text-brand-muted">Gestión y coordinación</p>
+                            </div>
+                            <div>
+                                <p class="font-display font-bold text-xl sm:text-2xl text-brand-navy">Presencial / Online</p>
+                                <p class="text-xs sm:text-sm text-brand-muted">Moodle e IA educativa</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna Fotografía Profesional / Avatar Corporativo Editable -->
+                    <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                        <div class="relative w-full max-w-sm">
+                            <!-- Marco decorativo editorial -->
+                            <div class="absolute -inset-3 rounded-2xl bg-brand-beige -rotate-2 border border-brand-pastel/30"></div>
+                            <div class="relative bg-white p-4 rounded-2xl border border-slate-200 editorial-shadow">
+                                <!-- Contenedor preparado para sustituir fácilmente por fotografía profesional real -->
+                                <div class="aspect-[4/5] w-full rounded-xl bg-gradient-to-br from-brand-light via-white to-brand-beige border border-brand-pastel/40 flex flex-col items-center justify-center p-6 text-center overflow-hidden relative">
+                                    <!-- Avatar Corporativo Editorial en SVG limpio -->
+                                    <div class="w-28 h-28 rounded-full bg-brand-navy/10 border-2 border-brand-navy/20 flex items-center justify-center mb-4">
+                                        <svg class="w-16 h-16 text-brand-navy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="8" r="4"></circle>
+                                            <path d="M5 20a7 7 0 0 1 14 0"></path>
+                                        </svg>
+                                    </div>
+                                    <p class="font-display font-semibold text-brand-navy text-base">María Pablos</p>
+                                    <p class="text-xs text-brand-muted mt-1 max-w-[220px]">
+                                        Espacio reservado para fotografía profesional corporativa
+                                    </p>
+                                    <span class="mt-4 inline-block px-3 py-1 rounded-full bg-white/90 border border-slate-200 text-[11px] font-medium text-brand-navy">
+                                        Valladolid · Castilla y León
+                                    </span>
+                                </div>
+                                <!-- Pie editorial de tarjeta -->
+                                <div class="mt-3 pt-2 flex items-center justify-between text-xs text-brand-muted px-1">
+                                    <span class="font-medium text-brand-navy">Perfil Profesional</span>
+                                    <span>Formación y Gestión</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 2. SOBRE MÍ ==================== -->
+        <section id="sobre-mi" class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+                    
+                    <!-- Encabezado lateral -->
+                    <div class="lg:col-span-4 space-y-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-3 py-1 rounded-md">
+                            Presentación Profesional
+                        </span>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                            Sobre mí
+                        </h2>
+                        <p class="text-sm text-brand-muted leading-relaxed">
+                            Un perfil puente entre la realidad operativa de la empresa y el diseño pedagógico orientado a la empleabilidad.
+                        </p>
+                        <div class="pt-2">
+                            <div class="p-4 rounded-xl bg-brand-beige/70 border border-brand-pastel/30 space-y-2">
+                                <p class="text-xs font-semibold uppercase tracking-wider text-brand-navy">Propuesta de valor</p>
+                                <ul class="space-y-1.5 text-sm text-brand-text">
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                        <span>Transferencia directa de procesos reales al aula.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                        <span>Rigor organizativo y gestión documental.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i data-lucide="check-circle-2" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                        <span>Integración práctica de e-learning e IA educativa.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Texto principal fiel a la identidad profesional -->
+                    <div class="lg:col-span-8 bg-white rounded-2xl border border-slate-200/90 p-6 sm:p-8 lg:p-10 editorial-shadow space-y-5 text-brand-text text-base sm:text-[17px] leading-relaxed">
+                        <p>
+                            Soy docente de <strong>Formación Profesional para el Empleo</strong>, especializada en <strong>Administración y Gestión</strong>, competencias digitales y atención al cliente. Cuento con más de seis años de experiencia docente en acciones formativas vinculadas a <strong>SEPE y ECYL</strong>, en modalidades presencial y teleformación mediante <strong>Moodle</strong>.
+                        </p>
+                        <p>
+                            Mi trayectoria combina la docencia con más de <strong>17 años de experiencia previa en gestión administrativa</strong>, coordinación de equipos, atención al cliente y organización de procesos empresariales.
+                        </p>
+                        <p>
+                            Diseño e imparto formación orientada a la adquisición de competencias profesionales reales, integrando metodologías activas, herramientas digitales e <strong>Inteligencia Artificial aplicada a la educación</strong>.
+                        </p>
+                        <p class="font-medium text-brand-navy pt-2 border-t border-slate-100">
+                            Mi objetivo es contribuir al desarrollo de proyectos formativos de calidad y aportar experiencia, organización e innovación a entornos profesionales y empresariales.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 3. EXPERIENCIA PROFESIONAL ==================== -->
+        <section id="experiencia" class="py-16 md:py-24 bg-brand-beige/45 border-y border-slate-200/70">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-12 space-y-3">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-white px-3 py-1 rounded-md border border-brand-pastel/40">
+                        Trayectoria Diferenciada
+                    </span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                        Experiencia Profesional
+                    </h2>
+                    <p class="text-brand-muted text-base">
+                        Recorrido estructurado en tres ámbitos complementarios: docencia para el empleo, gestión y coordinación empresarial, y entorno sanitario.
+                    </p>
+                </div>
+
+                <div class="space-y-8">
+                    
+                    <!-- BLOQUE 1: DOCENCIA Y FORMACIÓN (2020–ACTUALIDAD) -->
+                    <article class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 editorial-shadow">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 pb-6 border-b border-slate-100">
+                            <div class="flex items-start gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-brand-navy text-white flex items-center justify-center shrink-0 mt-0.5">
+                                    <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-display text-xl font-bold text-brand-navy">Docencia y Formación</h3>
+                                    <p class="text-sm text-brand-muted mt-0.5">
+                                        Experiencia docente en colaboración con entidades de formación y acciones vinculadas a SEPE y ECYL.
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="inline-flex items-center self-start md:self-center px-3.5 py-1.5 rounded-full bg-brand-light text-brand-navy text-xs font-semibold whitespace-nowrap">
+                                2020 – Actualidad
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-6">
+                            <!-- Ámbitos formativos -->
+                            <div class="lg:col-span-6 space-y-3">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-navy flex items-center gap-2">
+                                    <i data-lucide="book-open" class="w-4 h-4"></i>
+                                    Ámbitos formativos impartidos
+                                </h4>
+                                <ul class="space-y-2.5 text-sm text-brand-text">
+                                    <li class="p-3 rounded-lg bg-brand-light/50 border border-brand-pastel/30 flex items-start gap-2.5">
+                                        <span class="font-mono text-xs font-bold text-brand-navy bg-white px-2 py-0.5 rounded border border-slate-200 shrink-0">ADGG0408</span>
+                                        <span>Operaciones Auxiliares de Servicios Administrativos y Generales.</span>
+                                    </li>
+                                    <li class="p-3 rounded-lg bg-brand-light/50 border border-brand-pastel/30 flex items-start gap-2.5">
+                                        <span class="font-mono text-xs font-bold text-brand-navy bg-white px-2 py-0.5 rounded border border-slate-200 shrink-0">ADGD0308</span>
+                                        <span>Actividades de Gestión Administrativa.</span>
+                                    </li>
+                                    <li class="p-3 rounded-lg bg-brand-light/50 border border-brand-pastel/30 flex items-start gap-2.5">
+                                        <span class="font-mono text-xs font-bold text-brand-navy bg-white px-2 py-0.5 rounded border border-slate-200 shrink-0">ADGG0108</span>
+                                        <span>Asistencia a la Dirección.</span>
+                                    </li>
+                                    <li class="p-3 rounded-lg bg-brand-light/50 border border-brand-pastel/30 flex items-start gap-2.5">
+                                        <span class="font-mono text-xs font-bold text-brand-navy bg-white px-2 py-0.5 rounded border border-slate-200 shrink-0">COMT0110</span>
+                                        <span>Atención al Cliente, Consumidor o Usuario.</span>
+                                    </li>
+                                    <li class="px-3 py-2 flex items-center gap-2.5">
+                                        <i data-lucide="chevron-right" class="w-4 h-4 text-brand-navy shrink-0"></i>
+                                        <span>Excel avanzado y Microsoft Office.</span>
+                                    </li>
+                                    <li class="px-3 py-2 flex items-center gap-2.5">
+                                        <i data-lucide="chevron-right" class="w-4 h-4 text-brand-navy shrink-0"></i>
+                                        <span>Competencias digitales y comunicación por correo electrónico.</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Funciones docentes -->
+                            <div class="lg:col-span-6 space-y-3">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-brand-navy flex items-center gap-2">
+                                    <i data-lucide="clipboard-check" class="w-4 h-4"></i>
+                                    Funciones y responsabilidades docentes
+                                </h4>
+                                <ul class="grid grid-cols-1 gap-2 text-sm text-brand-text">
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Impartición de acciones formativas (presencial y teleformación).</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Diseño y elaboración de materiales didácticos.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Planificación de actividades prácticas orientadas al puesto.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Metodologías activas: aprendizaje basado en proyectos y gamificación.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Tutorización y seguimiento del alumnado en Moodle.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Evaluación del aprendizaje y seguimiento académico.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Gestión documental asociada a acciones formativas.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Coordinación de estancias formativas en empresas.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2.5">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-brand-navy mt-2 shrink-0"></span>
+                                        <span>Integración de herramientas digitales e IA en el aula.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- BLOQUES 2 Y 3 EN GRID DE 2 COLUMNAS -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        
+                        <!-- BLOQUE 2: GESTIÓN ADMINISTRATIVA Y COORDINACIÓN EMPRESARIAL (2002–2018) -->
+                        <article class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 editorial-shadow flex flex-col justify-between">
+                            <div>
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-5 border-b border-slate-100">
+                                    <div class="flex items-start gap-3.5">
+                                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0 mt-0.5">
+                                            <i data-lucide="briefcase" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-display text-lg sm:text-xl font-bold text-brand-navy">Gestión Administrativa y Coordinación Empresarial</h3>
+                                            <p class="text-sm text-brand-muted mt-0.5">Experiencia en empresas de servicios y restauración.</p>
+                                        </div>
+                                    </div>
+                                    <span class="inline-flex items-center self-start px-3 py-1 rounded-full bg-brand-beige text-brand-navy text-xs font-semibold whitespace-nowrap">
+                                        2002 – 2018
+                                    </span>
+                                </div>
+
+                                <div class="pt-5 space-y-3">
+                                    <h4 class="text-xs font-bold uppercase tracking-wider text-brand-navy">Responsabilidades clave</h4>
+                                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-sm text-brand-text">
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Gestión administrativa y documental.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Coordinación de equipos y organización de turnos.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Compras, pedidos, inventarios y proveedores.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Control de costes y seguimiento operativo.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Atención al cliente y resolución de incidencias.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Formación de personal.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2 sm:col-span-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Calidad y prevención de riesgos laborales.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- BLOQUE 3: EXPERIENCIA SANITARIA -->
+                        <article class="lg:col-span-5 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 editorial-shadow flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-start gap-3.5 pb-5 border-b border-slate-100">
+                                    <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0 mt-0.5">
+                                        <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="font-display text-lg sm:text-xl font-bold text-brand-navy">Experiencia Sanitaria</h3>
+                                        <p class="text-sm text-brand-muted mt-0.5">SACYL y Diputación de Valladolid</p>
+                                    </div>
+                                </div>
+
+                                <div class="pt-5 space-y-4">
+                                    <p class="text-sm text-brand-text leading-relaxed">
+                                        Trayectoria desarrollada en instituciones públicas sanitarias y sociosanitarias (<strong>SACYL</strong> y <strong>Diputación de Valladolid</strong>).
+                                    </p>
+                                    <ul class="space-y-2.5 text-sm text-brand-text">
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Atención directa al paciente y usuario.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Apoyo operativo a equipos asistenciales.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Educación sanitaria y orientación.</span>
+                                        </li>
+                                        <li class="flex items-start gap-2">
+                                            <i data-lucide="check" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                            <span>Utilización de herramientas de gestión sanitaria.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 4. ÁREAS DE ESPECIALIZACIÓN ==================== -->
+        <section id="especialidades" class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-12 space-y-3">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-3 py-1 rounded-md">
+                        Qué sé hacer y qué puedo aportar
+                    </span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                        Áreas de Especialización
+                    </h2>
+                    <p class="text-brand-muted text-base">
+                        Dos líneas profesionales complementarias que permiten abordar proyectos tanto en centros de formación como en departamentos administrativos y de recursos humanos.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    
+                    <!-- LÍNEA 1: FORMACIÓN Y DESARROLLO -->
+                    <div class="rounded-2xl border border-slate-200 bg-gradient-to-b from-brand-light/40 to-white p-6 sm:p-8 editorial-shadow editorial-card-hover">
+                        <div class="flex items-center gap-3.5 pb-5 border-b border-slate-200/80">
+                            <div class="w-12 h-12 rounded-xl bg-brand-navy text-white flex items-center justify-center shrink-0">
+                                <i data-lucide="presentation" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy">Línea Profesional 01</span>
+                                <h3 class="font-display text-xl font-bold text-brand-navy">Formación y Desarrollo</h3>
+                            </div>
+                        </div>
+
+                        <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-brand-text">
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Docencia de Formación Profesional para el Empleo.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Formación vinculada a Grados A, B y C.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Administración y Gestión.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Atención al cliente.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Competencias digitales.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Diseño instruccional y materiales didácticos.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Tutorización e-learning y Moodle.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Evaluación y seguimiento del aprendizaje.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Metodologías activas y gamificación.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Inteligencia Artificial aplicada a la educación.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- LÍNEA 2: ADMINISTRACIÓN Y GESTIÓN -->
+                    <div class="rounded-2xl border border-slate-200 bg-gradient-to-b from-brand-beige/60 to-white p-6 sm:p-8 editorial-shadow editorial-card-hover">
+                        <div class="flex items-center gap-3.5 pb-5 border-b border-slate-200/80">
+                            <div class="w-12 h-12 rounded-xl bg-brand-navy text-white flex items-center justify-center shrink-0">
+                                <i data-lucide="folder-kanban" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy">Línea Profesional 02</span>
+                                <h3 class="font-display text-xl font-bold text-brand-navy">Administración y Gestión</h3>
+                            </div>
+                        </div>
+
+                        <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-brand-text">
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Gestión administrativa y documental.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Organización de procesos.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Coordinación de equipos.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Atención al cliente y usuario.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Compras, proveedores e inventarios.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Control operativo.</span>
+                            </li>
+                            <li class="flex items-start gap-2.5 p-2.5 rounded-lg bg-white border border-slate-100 sm:col-span-2">
+                                <i data-lucide="check-circle" class="w-4 h-4 text-brand-navy shrink-0 mt-0.5"></i>
+                                <span>Ofimática y herramientas digitales.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 5. PORTFOLIO DE PROYECTOS Y RECURSOS ==================== -->
+        <section id="portfolio" class="py-16 md:py-24 bg-brand-light/40 border-y border-slate-200/70">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+                    <div class="max-w-3xl space-y-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-white px-3 py-1 rounded-md border border-brand-pastel/40">
+                            Evidencias y Materiales Didácticos
+                        </span>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                            Proyectos y recursos profesionales
+                        </h2>
+                        <p class="text-brand-muted text-base">
+                            Repositorio estructurado por tipología de recurso para incorporar programaciones, instrumentos de evaluación, materiales didácticos y aplicaciones prácticas reales.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Filtro por categorías para facilitar la navegación a centros y RRHH -->
+                <div class="flex flex-wrap gap-2 mb-8" role="tablist" aria-label="Filtrar categorías de recursos">
+                    <button type="button" onclick="filterProjects('todos')" class="filter-btn active px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium bg-brand-navy text-white transition-colors" data-filter="todos">
+                        Todas las categorías (9)
+                    </button>
+                    <button type="button" onclick="filterProjects('diseno')" class="filter-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium bg-white text-brand-muted border border-slate-200 hover:text-brand-navy transition-colors" data-filter="diseno">
+                        Diseño y Evaluación
+                    </button>
+                    <button type="button" onclick="filterProjects('innovacion')" class="filter-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium bg-white text-brand-muted border border-slate-200 hover:text-brand-navy transition-colors" data-filter="innovacion">
+                        Digital, Gamificación e IA
+                    </button>
+                    <button type="button" onclick="filterProjects('practica')" class="filter-btn px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium bg-white text-brand-muted border border-slate-200 hover:text-brand-navy transition-colors" data-filter="practica">
+                        Práctica y Gestión
+                    </button>
+                </div>
+
+                <!-- Grid de 9 tarjetas editables (sin inventar proyectos realizados) -->
+                <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- 1. Programaciones didácticas -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="diseno">
+                        <!-- Espacio para imagen -->
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="file-spreadsheet" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Programaciones didácticas</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    Planificación FPE
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Programaciones didácticas
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de la programación didáctica vinculada a Certificado Profesional o módulo formativo].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Definir objetivo formativo y secuenciación de contenidos].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Programación didáctica')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Cuadernos y materiales de aprendizaje -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="diseno">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="book-marked" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Cuadernos y materiales de aprendizaje</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    Diseño Instruccional
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Cuadernos y materiales de aprendizaje
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de manuales propios, guías del alumnado o cuadernos de trabajo].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Definir objetivo de aprendizaje y soporte al estudio autónomo].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Cuadernos y materiales de aprendizaje')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 3. Actividades prácticas -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="practica">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="layers" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Actividades prácticas</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    Aprendizaje Aplicado
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Actividades prácticas
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de dinámicas de aula, casos aplicados o talleres competenciales].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Definir competencia profesional entrenada].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Actividades prácticas')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Rúbricas e instrumentos de evaluación -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="diseno">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="list-checks" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Rúbricas e instrumentos de evaluación</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    Evaluación Objetiva
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Rúbricas e instrumentos de evaluación
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de rúbricas, listas de cotejo o pruebas de evaluación por criterios].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Definir criterios de evaluación y medición del progreso].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Rúbricas e instrumentos de evaluación')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. Infografías educativas -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="innovacion">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="layout-template" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Infografías educativas</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    Síntesis Visual
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Infografías educativas
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de esquemas visuales, mapas conceptuales o guías rápidas para el alumnado].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Facilitar la comprensión visual de procesos clave].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Infografías educativas')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 6. Recursos digitales e interactivos -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="innovacion">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="monitor-play" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Recursos digitales e interactivos</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    E-learning y Moodle
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Recursos digitales e interactivos
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de objetos de aprendizaje interactivos, cuestionarios o cápsulas digitales].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Dinamizar la teleformación y el aprendizaje activo].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Recursos digitales e interactivos')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 7. Proyectos de gamificación -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="innovacion">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="puzzle" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Proyectos de gamificación</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    Metodologías Activas
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Proyectos de gamificación
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de retos gamificados, dinámicas por niveles o aprendizaje basado en proyectos].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Fomentar la motivación y la participación en el aula].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Proyectos de gamificación')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 8. Aplicaciones de IA a la formación -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="innovacion">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Aplicaciones de IA a la formación</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    IA Educativa
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Aplicaciones de IA a la formación
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de prompts didácticos, asistentes educativos o flujos de trabajo con IA].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Integrar herramientas de IA de forma ética y productiva].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Aplicaciones de IA a la formación')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 9. Ejercicios prácticos de Administración y Gestión -->
+                    <article class="project-card bg-white rounded-2xl border border-slate-200 overflow-hidden editorial-shadow editorial-card-hover flex flex-col" data-category="practica">
+                        <div class="h-44 editable-slot border-b border-slate-200 flex flex-col items-center justify-center p-4 text-center">
+                            <div class="w-10 h-10 rounded-lg bg-white border border-brand-pastel/50 text-brand-navy flex items-center justify-center mb-2 shadow-xs">
+                                <i data-lucide="calculator" class="w-5 h-5"></i>
+                            </div>
+                            <span class="text-xs font-medium text-brand-navy">Espacio para imagen / vista previa</span>
+                            <span class="text-[11px] text-brand-muted mt-0.5">Ejercicios prácticos de Administración y Gestión</span>
+                        </div>
+                        <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                            <div class="space-y-2.5">
+                                <span class="inline-block text-[11px] font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-2.5 py-0.5 rounded">
+                                    Simulación Empresarial
+                                </span>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Ejercicios prácticos de Administración y Gestión
+                                </h3>
+                                <p class="text-sm text-brand-muted leading-relaxed">
+                                    [Espacio editable: incorporar descripción de supuestos de facturación, gestión documental, Excel o atención al cliente].
+                                </p>
+                                <div class="pt-2 border-t border-slate-100">
+                                    <p class="text-xs text-brand-text">
+                                        <strong class="text-brand-navy">Objetivo:</strong> [Reproducir procedimientos administrativos reales en el aula].
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <a href="#contacto" onclick="handlePendingLink(event, 'Ejercicios prácticos de Administración y Gestión')" class="inline-flex items-center gap-1.5 text-sm font-medium text-brand-navy hover:text-brand-navyDark">
+                                    <span>Enlace al recurso</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 6. COMPETENCIAS DIGITALES ==================== -->
+        <section id="competencias" class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="max-w-3xl mb-12 space-y-3">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-3 py-1 rounded-md">
+                        Entorno Tecnológico y Herramientas
+                    </span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                        Competencias Digitales
+                    </h2>
+                    <p class="text-brand-muted text-base">
+                        Dominio operativo de plataformas de teleformación, suites ofimáticas, herramientas de Inteligencia Artificial y sistemas de gestión.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    
+                    <!-- 1. Moodle -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">Moodle</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">Gestión de aulas virtuales, tutorización, recursos y evaluación.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Microsoft 365 -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="layout-grid" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">Microsoft 365</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">Word, Excel, PowerPoint, Access, Outlook y Teams.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Google Workspace -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="cloud" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">Google Workspace</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">Drive, Documentos, Hojas de cálculo, Presentaciones y trabajo colaborativo.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. ChatGPT y Microsoft Copilot -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="cpu" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">ChatGPT y Microsoft Copilot</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">IA generativa aplicada al diseño didáctico y la productividad.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Herramientas de creación de contenidos digitales -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="pen-tool" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">Creación de contenidos digitales</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">Diseño de materiales visuales, interactivos y recursos formativos.</p>
+                        </div>
+                    </div>
+
+                    <!-- 6. Plataformas de formación online -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="globe" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">Plataformas de formación online</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">Entornos LMS y seguimiento académico en teleformación.</p>
+                        </div>
+                    </div>
+
+                    <!-- 7. ERP y CRM -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="database" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">ERP y CRM</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">Sistemas de planificación de recursos y gestión de clientes.</p>
+                        </div>
+                    </div>
+
+                    <!-- 8. Medora CyL -->
+                    <div class="p-5 rounded-2xl bg-white border border-slate-200 editorial-shadow editorial-card-hover flex items-start gap-4">
+                        <div class="w-11 h-11 rounded-xl bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                            <i data-lucide="activity" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-base text-brand-navy">Medora CyL</h3>
+                            <p class="text-xs sm:text-sm text-brand-muted mt-1">Herramienta de gestión sanitaria en Castilla y León.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== 7. FORMACIÓN ACADÉMICA Y COMPLEMENTARIA ==================== -->
+        <section id="formacion" class="py-16 md:py-24 bg-brand-beige/45 border-t border-slate-200/70">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+                
+                <!-- SUBSECCIÓN 7.1: FORMACIÓN ACADÉMICA -->
+                <div>
+                    <div class="max-w-3xl mb-10 space-y-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-white px-3 py-1 rounded-md border border-brand-pastel/40">
+                            Titulaciones y Certificados Profesionales
+                        </span>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                            Formación Académica
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 editorial-shadow flex flex-col justify-between">
+                            <div class="space-y-3">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-navy bg-brand-light px-2.5 py-1 rounded-md">
+                                    <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                                    Titulación Universitaria
+                                </span>
+                                <h3 class="font-display font-bold text-base sm:text-lg text-brand-navy">
+                                    Diplomatura en Logopedia
+                                </h3>
+                            </div>
+                            <p class="text-sm text-brand-muted mt-4 pt-3 border-t border-slate-100">
+                                Universidad de Valladolid
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 editorial-shadow flex flex-col justify-between">
+                            <div class="space-y-3">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-navy bg-brand-light px-2.5 py-1 rounded-md">
+                                    <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                                    Formación Profesional
+                                </span>
+                                <h3 class="font-display font-bold text-base sm:text-lg text-brand-navy">
+                                    Técnico Especialista en Anatomía Patológica
+                                </h3>
+                            </div>
+                            <p class="text-sm text-brand-muted mt-4 pt-3 border-t border-slate-100">
+                                Rama Sanitaria
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 editorial-shadow flex flex-col justify-between">
+                            <div class="space-y-3">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-navy bg-brand-light px-2.5 py-1 rounded-md">
+                                    <i data-lucide="award" class="w-3.5 h-3.5"></i>
+                                    Formación Profesional
+                                </span>
+                                <h3 class="font-display font-bold text-base sm:text-lg text-brand-navy">
+                                    Técnico en Cuidados Auxiliares de Enfermería
+                                </h3>
+                            </div>
+                            <p class="text-sm text-brand-muted mt-4 pt-3 border-t border-slate-100">
+                                Rama Sanitaria
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 editorial-shadow flex flex-col justify-between">
+                            <div class="space-y-3">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-navy bg-brand-beige px-2.5 py-1 rounded-md">
+                                    <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
+                                    Certificado Profesional
+                                </span>
+                                <h3 class="font-display font-bold text-base sm:text-lg text-brand-navy">
+                                    Docencia de la Formación Profesional para el Empleo
+                                </h3>
+                            </div>
+                            <p class="text-sm text-brand-muted mt-4 pt-3 border-t border-slate-100">
+                                Acreditación docente FPE
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 editorial-shadow flex flex-col justify-between">
+                            <div class="space-y-3">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-navy bg-brand-beige px-2.5 py-1 rounded-md">
+                                    <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
+                                    Certificado Profesional
+                                </span>
+                                <h3 class="font-display font-bold text-base sm:text-lg text-brand-navy">
+                                    Gestión Administrativa
+                                </h3>
+                            </div>
+                            <p class="text-sm text-brand-muted mt-4 pt-3 border-t border-slate-100">
+                                Familia Administración y Gestión
+                            </p>
+                        </div>
+
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 editorial-shadow flex flex-col justify-between">
+                            <div class="space-y-3">
+                                <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-navy bg-brand-beige px-2.5 py-1 rounded-md">
+                                    <i data-lucide="badge-check" class="w-3.5 h-3.5"></i>
+                                    Certificado Profesional
+                                </span>
+                                <h3 class="font-display font-bold text-base sm:text-lg text-brand-navy">
+                                    Operaciones Auxiliares de Servicios Administrativos y Generales
+                                </h3>
+                            </div>
+                            <p class="text-sm text-brand-muted mt-4 pt-3 border-t border-slate-100">
+                                Familia Administración y Gestión
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SUBSECCIÓN 7.2: FORMACIÓN COMPLEMENTARIA AGRUPADA POR ESPECIALIDADES -->
+                <div>
+                    <div class="max-w-3xl mb-10 space-y-3">
+                        <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-white px-3 py-1 rounded-md border border-brand-pastel/40">
+                            Actualización Continua
+                        </span>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                            Formación Complementaria
+                        </h2>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        
+                        <!-- Grupo 1: E-learning y contenidos digitales -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-7 editorial-shadow">
+                            <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
+                                <div class="w-10 h-10 rounded-lg bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                                    <i data-lucide="monitor" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    E-learning y contenidos digitales
+                                </h3>
+                            </div>
+                            <ul class="mt-5 space-y-3.5 text-sm text-brand-text">
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>Formador de Formadores e-learning</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">120 h</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>Gestión y Metodología del e-learning en Moodle</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">90 h</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>Experto e-learning</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">70 h</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2">
+                                    <span>Creación de Contenidos Digitales, Mobile Learning y Gamificación</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">90 h</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Grupo 2: Competencias digitales -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-7 editorial-shadow">
+                            <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
+                                <div class="w-10 h-10 rounded-lg bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                                    <i data-lucide="laptop" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Competencias digitales
+                                </h3>
+                            </div>
+                            <ul class="mt-5 space-y-3.5 text-sm text-brand-text">
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>Soy Competente Digital</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">250 h</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>Competencias Digitales Avanzadas</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">60 h</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>Google Drive</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">100 h</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2">
+                                    <span>Excel: Fórmulas y Funciones</span>
+                                    <span class="font-mono text-xs font-medium text-brand-muted bg-slate-100 px-2 py-0.5 rounded shrink-0">Especialización</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Grupo 3: Inteligencia Artificial y tecnología -->
+                        <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-7 editorial-shadow">
+                            <div class="flex items-center gap-3 pb-4 border-b border-slate-100">
+                                <div class="w-10 h-10 rounded-lg bg-brand-light text-brand-navy flex items-center justify-center shrink-0">
+                                    <i data-lucide="bot" class="w-5 h-5"></i>
+                                </div>
+                                <h3 class="font-display font-bold text-lg text-brand-navy">
+                                    Inteligencia Artificial y tecnología
+                                </h3>
+                            </div>
+                            <ul class="mt-5 space-y-3.5 text-sm text-brand-text">
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>IA: Python y ChatGPT, IBM SkillsBuild</span>
+                                    <span class="font-mono text-xs font-semibold text-brand-navy bg-brand-light px-2 py-0.5 rounded shrink-0">86 h</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2 pb-2.5 border-b border-slate-50">
+                                    <span>Formación complementaria en ChatGPT y herramientas de IA</span>
+                                    <span class="font-mono text-xs font-medium text-brand-muted bg-slate-100 px-2 py-0.5 rounded shrink-0">IA Aplicada</span>
+                                </li>
+                                <li class="flex items-start justify-between gap-2">
+                                    <span>Fundamentos de Gestión de Proyectos</span>
+                                    <span class="font-mono text-xs font-medium text-brand-muted bg-slate-100 px-2 py-0.5 rounded shrink-0">Gestión</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==================== 8. CONTACTO Y VISIBILIDAD ==================== -->
+        <section id="contacto" class="py-16 md:py-24 bg-white border-t border-slate-200/80">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                    
+                    <!-- Información de contacto y enlaces editables -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="space-y-3">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-brand-navy bg-brand-light px-3 py-1 rounded-md">
+                                Contacto Profesional
+                            </span>
+                            <h2 class="font-display text-2xl sm:text-3xl font-bold text-brand-navy">
+                                Conversemos sobre su proyecto formativo o empresarial
+                            </h2>
+                            <p class="text-brand-muted text-base leading-relaxed">
+                                Disponible para colaboraciones docentes en Formación Profesional para el Empleo, diseño instruccional, proyectos de competencias digitales y puestos de coordinación o gestión administrativa.
+                            </p>
+                        </div>
+
+                        <!-- Tarjetas de datos editables (sin inventar correos, teléfonos ni direcciones) -->
+                        <div class="space-y-3 pt-2">
+                            <div class="p-4 rounded-xl bg-brand-light/50 border border-brand-pastel/40 flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-white text-brand-navy flex items-center justify-center shrink-0 border border-slate-200">
+                                    <i data-lucide="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-navy">Correo electrónico profesional</p>
+                                    <p class="text-sm text-brand-muted">[Espacio para incorporar correo electrónico real]</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-brand-light/50 border border-brand-pastel/40 flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-white text-brand-navy flex items-center justify-center shrink-0 border border-slate-200">
+                                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-navy">Perfil de LinkedIn</p>
+                                    <p class="text-sm text-brand-muted">[Espacio para incorporar URL de LinkedIn]</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-brand-light/50 border border-brand-pastel/40 flex items-center gap-3.5">
+                                <div class="w-10 h-10 rounded-lg bg-white text-brand-navy flex items-center justify-center shrink-0 border border-slate-200">
+                                    <i data-lucide="map-pin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase tracking-wider text-brand-navy">Ámbito de actuación</p>
+                                    <p class="text-sm text-brand-text">Valladolid · Castilla y León · Teleformación</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Accesos directos solicitados -->
+                        <div class="pt-2 flex flex-wrap gap-3">
+                            <a href="#contacto" onclick="handlePendingLink(event, 'Currículum Vitae (PDF)')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-brand-navy text-white text-sm font-medium hover:bg-brand-navyDark transition-colors">
+                                <i data-lucide="file-down" class="w-4 h-4"></i>
+                                Descargar mi CV
+                            </a>
+                            <a href="#portfolio" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-brand-beige text-brand-navy text-sm font-medium hover:bg-brand-light transition-colors">
+                                <i data-lucide="folder-open" class="w-4 h-4"></i>
+                                Ver mi portfolio
+                            </a>
+                            <a href="#contacto" onclick="handlePendingLink(event, 'LinkedIn')" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white text-brand-navy border border-slate-200 text-sm font-medium hover:border-brand-pastel transition-colors">
+                                <i data-lucide="linkedin" class="w-4 h-4"></i>
+                                Visitar mi LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulario de Contacto Profesional -->
+                    <div class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 lg:p-10 editorial-shadow">
+                        <h3 class="font-display text-xl font-bold text-brand-navy mb-2">
+                            Formulario de contacto
+                        </h3>
+                        <p class="text-sm text-brand-muted mb-6">
+                            Complete los siguientes campos para trasladar su consulta o propuesta de colaboración.
+                        </p>
+
+                        <form id="contact-form" class="space-y-5" novalidate>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="nombre" class="block text-sm font-medium text-brand-text mb-1.5">
+                                        Nombre y apellidos <span class="text-brand-navy">*</span>
+                                    </label>
+                                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Laura García"
+                                        class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-navy/20 focus:border-brand-navy transition-colors">
+                                </div>
+                                <div>
+                                    <label for="entidad" class="block text-sm font-medium text-brand-text mb-1.5">
+                                        Centro formativo o empresa
+                                    </label>
+                                    <input type="text" id="entidad" name="entidad" placeholder="Nombre de la organización"
+                                        class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-navy/20 focus:border-brand-navy transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-brand-text mb-1.5">
+                                        Correo electrónico <span class="text-brand-navy">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required placeholder="correo@entidad.es"
+                                        class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-navy/20 focus:border-brand-navy transition-colors">
+                                </div>
+                                <div>
+                                    <label for="motivo" class="block text-sm font-medium text-brand-text mb-1.5">
+                                        Área de interés
+                                    </label>
+                                    <select id="motivo" name="motivo"
+                                        class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm text-brand-text bg-white focus:outline-none focus:ring-2 focus:ring-brand-navy/20 focus:border-brand-navy transition-colors">
+                                        <option value="docencia">Docencia FPE (Presencial / Teleformación)</option>
+                                        <option value="diseno">Diseño Instruccional / Contenidos / IA</option>
+                                        <option value="administracion">Administración, Gestión y Coordinación</option>
+                                        <option value="otro">Otra consulta profesional</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="mensaje" class="block text-sm font-medium text-brand-text mb-1.5">
+                                    Mensaje <span class="text-brand-navy">*</span>
+                                </label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Indique brevemente los detalles de la acción formativa, proyecto o consulta..."
+                                    class="w-full px-4 py-2.5 rounded-lg border border-slate-300 text-sm text-brand-text focus:outline-none focus:ring-2 focus:ring-brand-navy/20 focus:border-brand-navy transition-colors"></textarea>
+                            </div>
+
+                            <!-- Caja de mensajes de estado (sustituye cualquier alert) -->
+                            <div id="form-feedback" class="hidden p-4 rounded-xl text-sm"></div>
+
+                            <div class="pt-1 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                                <span class="text-xs text-brand-muted">
+                                    * Campos obligatorios para responder a su consulta.
+                                </span>
+                                <button type="submit" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-brand-navy text-white font-medium text-sm hover:bg-brand-navyDark transition-colors shadow-sm">
+                                    <i data-lucide="send" class="w-4 h-4"></i>
+                                    Contactar conmigo
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== PIE DE PÁGINA ==================== -->
+    <footer class="bg-brand-navy text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-white/15">
+                <div>
+                    <p class="font-display font-bold text-lg text-white">María Pablos</p>
+                    <p class="text-sm text-brand-light/90 mt-1">
+                        Docente de Formación Profesional | Administración y Gestión | Diseño Instruccional e IA Educativa
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-4 text-sm text-brand-light">
+                    <a href="#inicio" class="hover:text-white transition-colors">Inicio</a>
+                    <a href="#sobre-mi" class="hover:text-white transition-colors">Sobre mí</a>
+                    <a href="#experiencia" class="hover:text-white transition-colors">Experiencia</a>
+                    <a href="#especialidades" class="hover:text-white transition-colors">Especialidades</a>
+                    <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+                    <a href="#formacion" class="hover:text-white transition-colors">Formación</a>
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-brand-light/80">
+                <p>© <span id="current-year"></span> María Pablos · Marca Personal y Portfolio Profesional.</p>
+                <p>Valladolid · Castilla y León</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== NOTIFICACIÓN SUTIL PARA ENLACES EDITABLES ==================== -->
+    <div id="toast-notification" role="status" aria-live="polite" class="fixed bottom-5 right-5 z-50 max-w-sm bg-brand-navy text-white px-4 py-3.5 rounded-xl shadow-lg border border-brand-pastel/30 hidden transition-opacity duration-300">
+        <div class="flex items-start gap-3">
+            <i data-lucide="info" class="w-5 h-5 text-brand-pastel shrink-0 mt-0.5"></i>
+            <div class="text-xs sm:text-sm leading-relaxed">
+                <p class="font-semibold" id="toast-title">Espacio preparado para enlace real</p>
+                <p class="text-brand-light/90 mt-0.5" id="toast-body">Puede vincular aquí su archivo o URL definitiva cuando lo desee.</p>
+            </div>
+            <button type="button" onclick="closeToast()" aria-label="Cerrar aviso" class="text-brand-light hover:text-white ml-1">
+                <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- ==================== SCRIPTS DE INTERACTIVIDAD ==================== -->
+    <script>
+        // Inicializar iconos de Lucide
+        lucide.createIcons();
+
+        // Año actual en el footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Menú móvil responsive
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Filtrado de categorías en la sección Proyectos y recursos profesionales
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.remove('bg-white', 'text-brand-muted', 'border', 'border-slate-200');
+                    btn.classList.add('bg-brand-navy', 'text-white');
+                } else {
+                    btn.classList.remove('bg-brand-navy', 'text-white');
+                    btn.classList.add('bg-white', 'text-brand-muted', 'border', 'border-slate-200');
+                }
+            });
+
+            cards.forEach(card => {
+                if (category === 'todos' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Notificación no intrusiva para espacios reservados a enlaces/archivos reales
+        let toastTimeout;
+        function handlePendingLink(event, resourceName) {
+            event.preventDefault();
+            const toast = document.getElementById('toast-notification');
+            const title = document.getElementById('toast-title');
+            const body = document.getElementById('toast-body');
+
+            title.textContent = `Recurso editable: ${resourceName}`;
+            body.textContent = 'Este botón está preparado para enlazar su documento PDF o URL real sin datos ficticios.';
+
+            toast.classList.remove('hidden');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 5000);
+        }
+
+        function closeToast() {
+            document.getElementById('toast-notification').classList.add('hidden');
+        }
+
+        // Validación y gestión visual del formulario de contacto
+        const contactForm = document.getElementById('contact-form');
+        const formFeedback = document.getElementById('form-feedback');
+
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const mensaje = document.getElementById('mensaje').value.trim();
+
+            formFeedback.classList.remove('hidden', 'bg-red-50', 'text-red-800', 'border-red-200', 'bg-brand-light', 'text-brand-navy', 'border-brand-pastel');
+
+            if (!nombre || !email || !mensaje) {
+                formFeedback.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+                formFeedback.textContent = 'Por favor, complete su nombre, correo electrónico y mensaje antes de enviar.';
+                return;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formFeedback.classList.add('bg-red-50', 'text-red-800', 'border', 'border-red-200');
+                formFeedback.textContent = 'Por favor, introduzca una dirección de correo electrónico válida.';
+                return;
+            }
+
+            formFeedback.classList.add('bg-brand-light', 'text-brand-navy', 'border', 'border-brand-pastel');
+            formFeedback.innerHTML = `<strong>Consulta preparada correctamente, ${nombre}.</strong> Una vez vinculado su correo profesional real en el formulario, los mensajes llegarán directamente a su bandeja de entrada.`;
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
